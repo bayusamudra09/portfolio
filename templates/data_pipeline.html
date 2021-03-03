@@ -42,7 +42,7 @@
             <p>Data pipeline i have built is going to scrape and store Indonesian covid spread data. I'm using Apache Airflow to schedule and monitor data pipeline. I don't need to do scraping and storing data repetitively because it will run automaticaly every day.</p>
             <p>The way the data pipeline work is it will check the availability of the API.If the API is available then it will download covid data each province in Indonesia on that day. it also have a task to create tabel in data base named covid_update_dataset where the data will be store after processing. the data have been download will be processing to get the increasing value case each province because thats not provided in the API. This processing data will provide all the data needed then store on the covid_update_dataset Tabel created before.</p>
             <p>When everything has been done. it will send a notification to slack </p>            
-            <img src="img/slack-notif.png" alt="" class="project__detail">
+            <img src="static/img/slack-notif.png" alt="" class="project__detail">
 
         </div>
 
