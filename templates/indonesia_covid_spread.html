@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./static/img/gradient_planet.png" rel="icon">
+        <title>choropleth map</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+            
+        <link rel="stylesheet" href="static/css/style8.css">
+
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">Project</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="project" id="home">
+            <h1 class="section__title section__title--project">
+                Project <strong>Choropleth Map</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--project">Indonesia Covid-19 Spread Choropleth Map for Province</p>
+            <img src="static/img/covid-id.png" alt="a picture of Jane Smith smiling" class="project__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>In this project i want to visualize covid-19 spread in Indonesia using    Choropleth Map. It is a map in which different regions are shaded according to the variable that represents an aggregate summary for each area. Two important things that require for choropleth maps are geojson data of Indonesia with the geopraphic boundaries and variables for shaded which is data of covid increasing cases each province in Indonesia.</p>
+            <p>I got shp file that has geographic boundaries information from data.humadata.org. the shp file need to reduce for simplicity of the data because it need more time to process bigger data. Data with covid-19 information each province in Indonesia downloaded from kawalcorona API. It have variable for coloring each province. both data must have a variable that have exactly same code to specify where to match the values of locations.</p>
+            <p>After all data has been prepared, last step is to plot the choropleth map</p>            
+            <img src="img/indonesia-covid-spread.png" alt="" class="project__detail">
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:baysmdra@gmail.com" class="footer__link">baysmdra@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://wa.me/087817206050">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/nakkebayu">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/bayusamudra09">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <script src="static/js/index.js"></script>
+
+
+    </body>
+</html>
